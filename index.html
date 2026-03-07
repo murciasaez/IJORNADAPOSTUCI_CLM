@@ -357,103 +357,81 @@
     </section>
 
     <section id="inscripcion" class="py-20 bg-white border-t border-gray-200 px-4">
-    <div class="max-w-6xl mx-auto">
-        <div class="text-center mb-12">
-            <h2 class="text-3xl font-bold text-medical-blue uppercase">Inscripción a la Jornada</h2>
-            <div class="w-20 h-1 bg-medical-accent mx-auto mt-4"></div>
-            <p class="text-gray-600 mt-6 max-w-2xl mx-auto">
-                Utilice la plataforma oficial SOFOS para su inscripción. Si experimenta dificultades técnicas, utilice el formulario de soporte resaltado en rojo.
-            </p>
-        </div>
-
-        <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-start">
-            
-            <div class="bg-gray-50 p-8 rounded-2xl border border-gray-100 flex flex-col h-full shadow-sm">
-                <div class="flex-grow text-center lg:text-left">
-                    <span class="bg-medical-blue text-white text-[10px] font-bold px-3 py-1 rounded-full uppercase tracking-widest">Opción Preferente</span>
-                    <h3 class="text-2xl font-bold text-dark-slate mt-4 mb-4 uppercase">Registro vía SOFOS</h3>
-                    <p class="text-gray-600 mb-8 leading-relaxed">
-                        Acceda a la plataforma oficial del SESCAM para completar su matrícula de forma reglada.
-                    </p>
-                    <div class="bg-white border-l-4 border-medical-accent p-4 mb-8 text-sm text-gray-700 italic shadow-sm">
-                        Curso: 37868 | Edición: 1
-                    </div>
-                </div>
-                <a href="https://sescam.jccm.es/sofos/matriculacion/fichaCurso.jsp?curso=37868&edicion=1" target="_blank" 
-                   class="block text-center bg-medical-blue hover:bg-blue-800 text-white font-bold py-4 px-6 rounded-lg transition shadow-lg text-lg uppercase tracking-wider">
-                    Inscripción en SOFOS <i class="fas fa-external-link-alt ml-2 text-sm"></i>
-                </a>
+        <div class="max-w-3xl mx-auto">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl font-bold text-medical-blue uppercase">Inscripción a la Jornada</h2>
+                <div class="w-20 h-1 bg-medical-accent mx-auto mt-4"></div>
+                <p class="text-gray-600 mt-6 max-w-2xl mx-auto">
+                    Complete el siguiente formulario para solicitar su plaza en la jornada. 
+                </p>
             </div>
 
-            <div class="bg-white p-8 rounded-2xl shadow-2xl border-2 border-red-100 relative overflow-hidden">
-                <div class="absolute top-0 right-0 bg-red-500 text-white text-[10px] font-bold px-3 py-1 uppercase tracking-widest">
-                    Incidencias técnicas
-                </div>
-
-                <div class="flex flex-col mb-8">
-                    <div class="flex items-center gap-4 mb-4">
-                        <div class="w-14 h-14 bg-red-100 text-red-600 rounded-full flex items-center justify-center flex-shrink-0 animate-pulse">
-                            <i class="fas fa-exclamation-triangle text-2xl"></i>
+            <div class="bg-white p-8 md:p-10 rounded-2xl shadow-xl border border-gray-100 relative overflow-hidden">
+                <div class="flex flex-col mb-8 text-center sm:text-left">
+                    <div class="flex flex-col sm:flex-row items-center sm:items-start gap-4 mb-6">
+                        <div class="w-14 h-14 bg-medical-light text-medical-blue rounded-full flex items-center justify-center flex-shrink-0">
+                            <i class="fas fa-edit text-2xl"></i>
                         </div>
                         <div>
-                            <span class="text-red-600 font-bold text-xs uppercase tracking-widest block mb-1">¿Fallo de sistema?</span>
-                            <h3 class="text-3xl md:text-4xl font-extrabold text-red-600 uppercase leading-none">
-                                SI TIENES PROBLEMAS CON EL ENLACE SOFOS
+                            <span class="text-medical-blue font-bold text-xs uppercase tracking-widest block mb-1 mt-2 sm:mt-0">Solicitud Directa</span>
+                            <h3 class="text-2xl md:text-3xl font-extrabold text-dark-slate uppercase leading-none">
+                                FORMULARIO DE INSCRIPCIÓN
                             </h3>
                         </div>
                     </div>
-                    <p class="text-gray-600 font-medium bg-red-50 p-3 rounded-lg border-l-4 border-red-500">
-                        Debido a problemas técnicos con SOFOS, puede enviarnos sus datos directamente para asegurar su plaza.
+                    <p class="text-gray-600 font-medium bg-blue-50 p-4 rounded-lg border-l-4 border-medical-accent text-sm text-left">
+                        Por favor, introduzca sus datos personales y centro de trabajo para procesar su solicitud de asistencia.
                     </p>
                 </div>
 
-                <form class="space-y-4">
-                    <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                <form class="space-y-5">
+                    <div class="grid grid-cols-1 sm:grid-cols-2 gap-5">
                         <div>
                             <label class="block text-xs font-bold text-gray-500 mb-1 uppercase tracking-wider">Nombre</label>
-                            <input type="text" id="nombre" required class="w-full px-4 py-3 border-2 border-gray-100 rounded-lg focus:ring-2 focus:ring-red-500 focus:border-red-500 focus:outline-none text-sm bg-gray-50 transition-all">
+                            <input type="text" id="nombre" required class="w-full px-4 py-3 border border-gray-200 rounded-lg focus:ring-2 focus:ring-medical-accent focus:border-medical-accent focus:outline-none text-sm bg-gray-50 transition-all">
                         </div>
                         <div>
                             <label class="block text-xs font-bold text-gray-500 mb-1 uppercase tracking-wider">Apellidos</label>
-                            <input type="text" id="apellidos" required class="w-full px-4 py-3 border-2 border-gray-100 rounded-lg focus:ring-2 focus:ring-red-500 focus:border-red-500 focus:outline-none text-sm bg-gray-50 transition-all">
+                            <input type="text" id="apellidos" required class="w-full px-4 py-3 border border-gray-200 rounded-lg focus:ring-2 focus:ring-medical-accent focus:border-medical-accent focus:outline-none text-sm bg-gray-50 transition-all">
                         </div>
                     </div>
-                    <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                    <div class="grid grid-cols-1 sm:grid-cols-2 gap-5">
                         <div>
                             <label class="block text-xs font-bold text-gray-500 mb-1 uppercase tracking-wider">DNI / NIE</label>
-                            <input type="text" id="dni" required class="w-full px-4 py-3 border-2 border-gray-100 rounded-lg focus:ring-2 focus:ring-red-500 focus:border-red-500 focus:outline-none text-sm bg-gray-50 transition-all" placeholder="12345678X">
+                            <input type="text" id="dni" required class="w-full px-4 py-3 border border-gray-200 rounded-lg focus:ring-2 focus:ring-medical-accent focus:border-medical-accent focus:outline-none text-sm bg-gray-50 transition-all" placeholder="12345678X">
                         </div>
                         <div>
                             <label class="block text-xs font-bold text-gray-500 mb-1 uppercase tracking-wider">Centro de Trabajo</label>
-                            <input type="text" id="centro" required class="w-full px-4 py-3 border-2 border-gray-100 rounded-lg focus:ring-2 focus:ring-red-500 focus:border-red-500 focus:outline-none text-sm bg-gray-50 transition-all">
+                            <input type="text" id="centro" required class="w-full px-4 py-3 border border-gray-200 rounded-lg focus:ring-2 focus:ring-medical-accent focus:border-medical-accent focus:outline-none text-sm bg-gray-50 transition-all">
                         </div>
                     </div>
-                    <button type="button" onclick="sendMail()" class="w-full bg-red-600 hover:bg-red-700 text-white font-black py-5 rounded-xl transition duration-300 text-lg uppercase tracking-widest shadow-xl transform hover:scale-[1.02] active:scale-95">
-                        ENVIAR DATOS AHORA <i class="fas fa-paper-plane ml-2"></i>
+                    
+                    <button type="button" onclick="sendMail()" class="w-full bg-medical-blue hover:bg-blue-800 text-white font-black py-5 rounded-xl transition duration-300 text-lg uppercase tracking-widest shadow-lg transform hover:-translate-y-1 mt-4">
+                        ENVIAR SOLICITUD <i class="fas fa-paper-plane ml-2"></i>
                     </button>
+                    
                     <p class="text-center text-[10px] text-gray-400 uppercase font-bold mt-4">
-                        Sus datos serán enviados directamente a la Dra. Isabel Murcia.
+                        Sus datos serán enviados directamente a la coordinación de la jornada.
                     </p>
                 </form>
             </div>
-        </div>
 
-        <div class="mt-20 border-t border-gray-100 pt-12">
-            <h3 class="text-xs font-bold text-gray-400 uppercase tracking-widest mb-10 text-center">Organiza y Colabora</h3>
-            <div class="flex flex-col sm:flex-row justify-center items-center gap-10 md:gap-20 opacity-90">
-                <div class="h-20 flex items-center justify-center">
-                    <img src="GAI-ALBACETE.png" alt="GAI Albacete" class="max-h-16 w-auto object-contain">
-                </div>
-                <div class="h-20 flex items-center justify-center">
-                    <img src="MEDICINA-ALBACETE.png" alt="Facultad de Medicina de Albacete" class="max-h-16 w-auto object-contain">
-                </div>
-                <div class="h-20 flex items-center justify-center">
-                    <img src="SESCAM.png" alt="SESCAM" class="max-h-16 w-auto object-contain">
+            <div class="mt-20 border-t border-gray-100 pt-12">
+                <h3 class="text-xs font-bold text-gray-400 uppercase tracking-widest mb-10 text-center">Organiza y Colabora</h3>
+                <div class="flex flex-col sm:flex-row justify-center items-center gap-10 md:gap-20 opacity-90">
+                    <div class="h-20 flex items-center justify-center">
+                        <img src="GAI-ALBACETE.png" alt="GAI Albacete" class="max-h-16 w-auto object-contain">
+                    </div>
+                    <div class="h-20 flex items-center justify-center">
+                        <img src="MEDICINA-ALBACETE.png" alt="Facultad de Medicina de Albacete" class="max-h-16 w-auto object-contain">
+                    </div>
+                    <div class="h-20 flex items-center justify-center">
+                        <img src="SESCAM.png" alt="SESCAM" class="max-h-16 w-auto object-contain">
+                    </div>
                 </div>
             </div>
         </div>
-    </div>
-</section>
+    </section>
 
     <footer class="bg-dark-slate text-gray-400 py-10 px-4 text-center md:text-left border-t border-white/5">
         <div class="max-w-7xl mx-auto flex flex-col md:flex-row justify-between items-center gap-8">
@@ -477,13 +455,13 @@
             const centro = document.getElementById('centro').value;
             
             if(!nombre || !apellidos || !dni || !centro) {
-                alert("Por favor, rellene todos los campos para enviar la solicitud de soporte.");
+                alert("Por favor, rellene todos los campos para enviar su solicitud de inscripción.");
                 return;
             }
 
-            const subject = encodeURIComponent("Problemas Inscripción Jornada - Soporte Directo");
+            const subject = encodeURIComponent("Inscripción: I Jornada de Cuidados Después de UCI");
             const body = encodeURIComponent(
-                `Solicitud de inscripción por problemas técnicos en SOFOS:\n\n` +
+                `Solicitud de inscripción para la jornada:\n\n` +
                 `Nombre: ${nombre}\n` +
                 `Apellidos: ${apellidos}\n` +
                 `DNI: ${dni}\n` +
@@ -496,4 +474,4 @@
     </script>
 
 </body>
-</html>
+</html>   
